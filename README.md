@@ -4,7 +4,7 @@ This project is a simple password manager written in Python. It was inspired by 
 ## How to Use it
 The password manager includes the following user functions:
 
-- `add_service(service, username, length = 10 ,alphabet, symbols=False, dbname)` - Adds a new service to the database. Stores the information necessary to reconstruct a password. Default password length is set to 10 and the default alphabet includes lower case and upper case letters and numbers. Setting the `symbols` parameter to `True` will add the symbols `!@#$%^&*()-_` to the alphabet. A custom alphabet can be set by passing the alphabet as a single string to the `alphabet` paramter. For example, `alphabet` = `'abcABC012#$&'`.
+- `add_service(service, username, length = 10 ,alphabet, symbols=False, dbname)` - Adds a new service to the database. Stores the information necessary to reconstruct a password. Default password length is set to 10 and the default alphabet includes lower case and upper case letters and numbers. Setting the `symbols` parameter to `True` will add the symbols `!@#$%^&*()-_` to the alphabet. A custom alphabet can be set by passing the alphabet as a single string to the `alphabet` parameter. For example, `alphabet` = `'abcABC012#$&'`.
 - `remove_service(service, dbname)` - Remove a service from the database.
 - `password(service,dbname,show=False)` - Generate a password for a service. User will be prompted for a master password to generate the correct password. Saves the password to the clipboard. If the `show` parameter is set to True, the password will be printed. Default behavior does not print the password.
 - `username(service,dbname)` - Retrieve the username for the service. Prints the username and saves to the clipboard.
