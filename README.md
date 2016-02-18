@@ -11,7 +11,7 @@ The password manager includes the following user functions:
 - `peek(dbname,service = None)` - Default behavior lists the accounts stored in the database. Information for a specific service will be displayed if the `service` parameter is set to a service name.
 
 Some notes about the function parameters:
-- `dbname` - The database name that stores the account information. By default, account information will be saved to a database named `accounts.db`. Unless the user wishes to create a new database or change the database name, *the dbname parameter does not need to be set by the user*.
+- `dbname` - The database name that stores the account information. By default, account information will be saved to a database named `accounts.db`. Unless the user wishes to create a new database or change the database name, **the dbname parameter does not need to be set by the user**.
 - `service` - This is the name of the service or account as a string.
 
 ## How it works
