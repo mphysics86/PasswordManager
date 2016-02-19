@@ -7,7 +7,7 @@ import pyperclip
 import getpass
 from hashlib import sha256
 
-_DB_NAME = "accounts.db"
+_DB_NAME = "c:/users/lenovo/documents/accounts.db"
 _ALPHABET = ('abcdefghijklmnopqrstuvwxyz'
             'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
             '0123456789')
@@ -28,7 +28,7 @@ def remove_service(service,dbname=_DB_NAME):
         print "\nInfo for '{}' service has NOT been removed.".format(service)
         return
     con = sqlite3.connect(dbname)
-    con.execute('DELETE service_name,data FROM Accounts WHERE service_name = ?',(service,))
+    con.execute('DELETE FROM Accounts WHERE service_name = ?',(service,))
     con.commit()
     con.close()
     print "Info for '{}' service has been removed.".format(service)
